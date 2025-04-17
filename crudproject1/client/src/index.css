@@ -1,0 +1,328 @@
+/* Resetting default browser styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add box-sizing for better layout control */
+  }
+  
+  body {
+    font-family: sans-serif; /* Add a default font */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Limit container width for better readability */
+    margin-top: 30px; /* Reduced margin-top */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Add some padding on the sides */
+    /* height: 800px; /* நீங்க குறிப்பிட்ட உயரம் தேவையான்னு யோசிச்சு பாருங்க */
+  }
+  
+  .success {
+    color: #FFB524;
+  }
+  
+  #one {
+    color: #81C408;
+    font-size: 40px; /* Reduced font size for better responsiveness */
+    font-weight: bold;
+    margin-bottom: 15px; /* Add some space below the heading */
+  }
+  
+  .btn-success { /* Use Bootstrap's default class */
+    background-color: #81C408 !important; /* Override default style */
+    border: none !important;
+  }
+  
+  .container img {
+    border-radius: 30px;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+  }
+  
+  /* Cart Section */
+  .mt-1 {
+    margin-top: 1.5rem; 
+  }
+  
+  .fw-bold {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-group .btn {
+    margin-right: 5px; 
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem; /* Add space between cards */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Reduced shadow */
+  }
+  
+  .card-img-top {
+    max-height: 200px; /* Limit image height */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #badge {
+    position: absolute; /* Changed to absolute for better positioning */
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ffc107; /* Use a consistent background color */
+    padding: 0.4em 0.6em;
+    border-radius: 0.25em;
+    z-index: 1; /* Ensure badge is on top of the image */
+    bottom: auto; /* Resetting previous positioning */
+    left: auto; /* Resetting previous positioning */
+  }
+  
+  #badge:hover {
+    background-color: #ffb524;
+    transform: scale(1.05); /* Reduced scale */
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  }
+  
+  /* Contact Form Section */
+  .mt-4 {
+    margin-top: 2rem; /* Adjust top margin for contact form */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .mb-3 {
+    margin-bottom: 0.75rem !important; /* Reduced margin-bottom for form groups */
+  }
+  
+  .form-label {
+    margin-bottom: 0.2rem; /* Reduced margin-bottom for labels */
+    font-size: 1rem;
+    display: block; /* Ensure label takes full width */
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+  }
+  
+  button.btn.btn-primary {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff; /* Use a standard primary color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  button.btn.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries for Responsiveness (Adjust values as needed) */
+  @media (max-width: 992px) {
+    #one {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #one {
+      font-size: 24px;
+    }
+  
+    /* Adjust badge position for smaller screens */
+    #badge {
+      font-size: 12px;
+      top: 5px;
+      right: 5px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #one {
+      font-size: 20px;
+    }
+  
+    .card-columns {
+      column-count: 1; /* Display cards in a single column on smaller screens */
+    }
+  }
+/* Vegetables Section Styles */
+.vegetables-section {
+    padding: 20px;
+    text-align: center;
+   
+  }
+  
+  .navigation-arrows {
+    margin-top: 10px;
+  }
+  
+  .navigation-arrows button {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .navigation-arrows button:hover {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .vegetables-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .vegetables-grid::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  
+  .vegetable-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow-x: hidden;
+    text-align: center;
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .vegetable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vegetable-card img {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+  }
+  
+  .vegetable-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .vegetable-details {
+    padding: 15px;
+  }
+  
+  .vegetable-tag {
+    background-color: #81c408;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .vegetable-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .vegetable-description {
+    color: #6c757d;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+  }
+  
+  .vegetable-price {
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .vegetable-details button { /* Style the button directly within .vegetable-details */
+    background-color: #81C408;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .vegetable-details button i {
+    margin-right: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .vegetable-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .vegetable-card {
+      width: 100%;
+    }
+  }
+  .vegetables-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+  }
+  .vegetable-card {
+    min-width: 250px;
+    flex: 0 0 auto;
+  }
+
+  /*vegetable*/
+  
+  .four{
+    font-size: 18px;
+   
+  }
+  center{
+    font-size: 35px;
+    font-weight: bold;
+  }
